@@ -4,13 +4,13 @@ module API
 
     included do
       include Helpers::Common
-      
+
       version 'v1', using: :path
 
       content_type :json, 'application/json'
       content_type :txt, 'text/plain'
-      # content_type :xml, 'application/xml'
-      # content_type :binary, 'application/octet-stream'
+      content_type :xml, 'application/xml'
+      content_type :binary, 'application/octet-stream'
 
       default_format :json
 

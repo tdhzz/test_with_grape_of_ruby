@@ -13,7 +13,9 @@ module GrapeRailsTemplate
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
+      # origins来自与那些域名可以访问
         origins '*'
+       # 来自与那些方式可以访问
         resource '*', :headers => :any, :methods => :any #[:get, :post, :options]
       end
     end

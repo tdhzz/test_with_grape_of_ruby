@@ -1,6 +1,7 @@
 module API
   module Helpers
     module Common
+      # 引入included方法
       extend ActiveSupport::Concern
 
       included do
